@@ -9,11 +9,11 @@ class Categoris extends StatelessWidget {
     return GetBuilder<HomeController>(builder: (control){
 
       return GridView.builder(
-        scrollDirection: Axis.horizontal,
+        itemCount: 8,
           shrinkWrap: true,
           primary: false,
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 2,
+            crossAxisCount: 4,
             childAspectRatio: 1,
             mainAxisSpacing: 5,
             crossAxisSpacing: 5,

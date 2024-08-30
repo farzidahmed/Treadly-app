@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:list_json/global_widget/custom_nav.dart';
 import 'package:list_json/global_widget/pupular.dart';
 import 'package:list_json/style/style.dart';
+import '../global_widget/bottom_nav.dart';
 import '../global_widget/categoris.dart';
 import '../global_widget/product.dart';
 import '../home_controller/home_controller.dart';
@@ -91,11 +92,11 @@ class HomeScreen extends StatelessWidget {
          ),
        ),
      ),
+     bottomNavigationBar: BottomNav(),
   body: SingleChildScrollView(
     child: Column(
       children: [
         Container(
-            height: 300,
             child: Categoris()),
         SizedBox(height: 10,),
         Row(

@@ -1,8 +1,9 @@
 
+import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 
 class HomeController extends GetxController{
-
+//================= product item=======
   List items =[
     {
       'image':"assets/categories/beverages/img.png",
@@ -12,12 +13,12 @@ class HomeController extends GetxController{
     {
       'image':"assets/categories/beverages/img_1.png",
       'title':"apple",
-      'price':'25'
+      'price':'35'
     },
     {
       'image':"assets/categories/beverages/img_2.png",
       'title':"orange",
-      'price':'25'
+      'price':'40'
     },
     {
       'image':"assets/categories/beverages/img.png",
@@ -26,6 +27,7 @@ class HomeController extends GetxController{
     },
   ];
 
+  //==================popular item==========
   List popular =[
     {
       'image':"assets/popular/img.png",
@@ -43,6 +45,7 @@ class HomeController extends GetxController{
       'price':'25'
     },
   ];
+  //======================grid view=========
 List grid =[
   {
     'img':"assets/grid/img.png",

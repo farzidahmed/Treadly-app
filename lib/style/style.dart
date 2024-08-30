@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 class Style extends StatelessWidget {
-   Style({super.key, required this.text,  this.fontWeight,  this.fontSize,required this.color, this.backGroundColor, this.isTrue});
+   Style({super.key, required this.text,  this.fontWeight,  this.fontSize,required this.color, this.backGroundColor, });
   final String text;
    final FontWeight? fontWeight;
    final double? fontSize;
    final Color color;
    final Color? backGroundColor;
-   final bool? isTrue ;
 
   @override
   Widget build(BuildContext context) {

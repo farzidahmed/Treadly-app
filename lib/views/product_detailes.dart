@@ -4,7 +4,10 @@ import 'package:get/get.dart';
 
 import '../style/style.dart';
 class ProductDetailes extends StatelessWidget {
-  const ProductDetailes({super.key});
+   ProductDetailes({super.key, required this.title,required this.image, this.price});
+    final String title;
+    final String image;
+    final String ?price;
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +18,7 @@ class ProductDetailes extends StatelessWidget {
                 children: [
                   Stack(
                 children: [
-                  Image.asset("assets/categories/beverages/img.png",fit: BoxFit.cover,width: double.infinity,),
+                  Image.asset("$image",fit: BoxFit.cover,width: double.infinity,),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -72,12 +75,12 @@ class ProductDetailes extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Style( text: "Stawbery punch", color: Colors.black,),
+                          Style( text: "${title}", color: Colors.black,),
                           Row(
                             children: [
-                          Heading(data: "৳ 25", color: Color.fromRGBO(51, 144, 124, 1)),
+                          Heading(data: "${price}", color: Color.fromRGBO(51, 144, 124, 1)),
                               SizedBox(width: 10,),
-    Heading(data: "'50% off'", color: Colors.black)
+                            Heading(data: "'50% off'", color: Colors.black)
                             ],
                           )
                         ],

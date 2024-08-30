@@ -44,7 +44,7 @@ class Product extends StatelessWidget {
                                 width: Get.width*.4,
                                 child: InkWell(
                                     onTap: (){
-                                      Get.to(ProductDetailes());
+                                      Get.to(ProductDetailes(title: home.items[index]["title"], image:home.items[index] ['image'], price: home.items[index]["price"],));
                                     },
                                     child: Image.asset("${home.items[index]["image"]}",fit: BoxFit.cover,)),
                               ),

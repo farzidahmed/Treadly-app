@@ -43,11 +43,13 @@ class Popular extends StatelessWidget {
                                 width: Get.width*.4,
                                 child: InkWell(
                                     onTap: (){
-                                      Get.to(ProductDetailes());
+                                       Get.to(ProductDetailes(title:  producttiles.popular[index]["title"], image:producttiles.popular[index]["image"],));
                                     },
                                     child: Image.asset("${producttiles.popular[index]["image"]}",fit: BoxFit.cover,)),
                               ),
-                            )
+                            ),
+                            Positioned(child: IconButton(onPressed: (){}
+                                , icon: Icon(Icons.favorite,size: 30,color: Color.fromRGBO(51, 144, 124, 1),)),)
                           ],
                         ),
                         Column(
