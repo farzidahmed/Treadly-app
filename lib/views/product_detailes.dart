@@ -5,8 +5,8 @@ import 'package:get/get.dart';
 import '../style/style.dart';
 class ProductDetailes extends StatelessWidget {
    ProductDetailes({super.key, required this.title,required this.image, this.price});
-    final String title;
-    final String image;
+   final String image;
+   final String title;
     final String ?price;
 
   @override

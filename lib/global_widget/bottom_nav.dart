@@ -18,9 +18,6 @@ List<Widget> tab=[
   CartScreen(),
   OrderHistory(),
   Profile(),
-  /*Center(child: CircularProgressIndicator(color:Color.fromRGBO(51, 144, 124, 1),)),
-  Center(child: CircularProgressIndicator(color: Color.fromRGBO(51, 144, 124, 1),)),
-  Center(child: CircularProgressIndicator(color: Color.fromRGBO(51, 144, 124, 1),)),*/
 
   ];
 
@@ -31,7 +28,7 @@ int index =0;
     return Scaffold(
         body: tab[index],
       bottomNavigationBar: BottomNavigationBar(
-          //selectedItemColor: AppColors.primaryColor,
+          selectedItemColor: Color.fromRGBO(51, 144, 124, 1),
           selectedLabelStyle: const TextStyle(fontWeight: FontWeight.w500),
           unselectedItemColor: Colors.black.withOpacity(0.6),
           showUnselectedLabels: true,

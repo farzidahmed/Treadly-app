@@ -92,7 +92,7 @@ class HomeScreen extends StatelessWidget {
          ),
        ),
      ),
-     bottomNavigationBar: BottomNav(),
+
   body: SingleChildScrollView(
     child: Column(
       children: [

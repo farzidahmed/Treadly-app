@@ -1,5 +1,6 @@
 
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class HomeController extends GetxController{
@@ -27,24 +28,6 @@ class HomeController extends GetxController{
     },
   ];
 
-  //==================popular item==========
-  List popular =[
-    {
-      'image':"assets/popular/img.png",
-      'title':"Hilsha",
-      'price':'25'
-    },
-    {
-      'image':"assets/popular/img_1.png",
-      'title':"Shampu",
-      'price':'25'
-    },
-    {
-      'image':"assets/popular/img_4.png",
-      'title':"Vegitables",
-      'price':'25'
-    },
-  ];
   //======================grid view=========
 List grid =[
   {
@@ -72,6 +55,47 @@ List grid =[
     'img':"assets/grid/img_7.png",
   },
 
-
 ];
+
+  //==================popular item==========
+  List popular =[
+    {
+      'image':"assets/popular/img.png",
+      'title':"Hilsha",
+      'price':'25'
+    },
+    {
+      'image':"assets/popular/img_1.png",
+      'title':"Shampu",
+      'price':'25'
+    },
+    {
+      'image':"assets/popular/img_4.png",
+      'title':"Vegitables",
+      'price':'25'
+    },
+  ];
+
+//================myfavitem=========
+
+List favItem=[];
+
+void addFavorite( dynamic value){
+  favItem.add(value);
+    update();
+  Get.snackbar(
+    "Tiredly",
+    "Successfully added to favorite",
+    icon: Icon(Icons.person, color: Colors.white),
+    snackPosition: SnackPosition.TOP,
+    backgroundColor: Colors.green,
+  );
+}
+void removeFav(index){
+  favItem.removeAt(index);
+  update();
+}
+  bool isFavorite(Map<String, dynamic> product) {
+    return favItem.contains(product);
+  }
 }

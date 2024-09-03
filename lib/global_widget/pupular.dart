@@ -4,8 +4,10 @@ import 'package:get/get.dart';
 
 import '../home_controller/home_controller.dart';
 import '../views/product_detailes.dart';
+import 'csutom_fav_icon.dart';
 class Popular extends StatelessWidget {
-  const Popular({super.key});
+  const Popular( {super.key});
+
 
   @override
   Widget build(BuildContext context) {
@@ -48,8 +50,30 @@ class Popular extends StatelessWidget {
                                     child: Image.asset("${producttiles.popular[index]["image"]}",fit: BoxFit.cover,)),
                               ),
                             ),
-                            Positioned(child: IconButton(onPressed: (){}
-                                , icon: Icon(Icons.favorite,size: 30,color: Color.fromRGBO(51, 144, 124, 1),)),)
+                Positioned(child: IconButton(
+                  onPressed: () {
+                    //print("add");
+                    //print("remove");
+                    //product add check
+                    if (producttiles.isFavorite(producttiles.popular[index])) {
+                      //remove favortie
+                      //producttiles.removeFav(producttiles.popular[index]);
+                    } else {
+                      // product add favorite
+                      producttiles.addFavorite(producttiles.popular[index]);
+                    }
+                    // update
+                   // producttiles.update();
+                  },
+                  // Icon color change
+                  icon: Icon(
+                    Icons.favorite,
+                    size: 30,
+                    color: producttiles.isFavorite(producttiles.popular[index])
+                        ? Colors.red
+                        : Color.fromRGBO(51, 144, 124, 1),
+                  ),
+                ),)
                           ],
                         ),
                         Column(

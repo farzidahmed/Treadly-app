@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../home_controller/home_controller.dart';
 import '../views/product_detailes.dart';
+import 'csutom_fav_icon.dart';
 
 
 class Product extends StatelessWidget {
@@ -48,7 +49,29 @@ class Product extends StatelessWidget {
                                     },
                                     child: Image.asset("${home.items[index]["image"]}",fit: BoxFit.cover,)),
                               ),
-                            )
+                            ),
+                            Positioned(child: IconButton(
+                              onPressed: () {
+                                // পণ্যটি ফেভারিট করা হয়েছে কিনা তা চেক করুন
+                                if (home.isFavorite(home.popular[index])) {
+                                  // ফেভারিট থেকে সরান
+                                  home.removeFav(home.popular[index]);
+                                } else {
+                                  // ফেভারিটে যোগ করুন
+                                  home.addFavorite(home.popular[index]);
+                                }
+                                // UI রিফ্রেশ করার জন্য GetBuilder-কে আপডেট করুন
+                                home.update();
+                              },
+                              // যদি ফেভারিট করা হয়, তাহলে রঙ পরিবর্তন করুন
+                              icon: Icon(
+                                Icons.favorite,
+                                size: 30,
+                                color: home.isFavorite(home.popular[index])
+                                    ? Colors.red
+                                    : Color.fromRGBO(51, 144, 124, 1),
+                              ),
+                            ),)
                           ],
                         ),
                         Column(
