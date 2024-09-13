@@ -1,9 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../home_controller/home_controller.dart';
+import '../controller/home_controller.dart';
 import '../views/home_screen/product_detailes.dart';
-import 'csutom_fav_icon.dart';
 
 
 class Product extends StatelessWidget {

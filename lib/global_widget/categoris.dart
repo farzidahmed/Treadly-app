@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:list_json/home_controller/home_controller.dart';
+
+import '../controller/home_controller.dart';
 class Categoris extends StatelessWidget {
   const Categoris({super.key});
 

@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 
 import '../../constants/apps_color.dart';
 import '../../constants/style.dart';
-import '../../home_controller/intro_controller.dart';
+import '../../controller/intro_controller.dart';
 import '../../routes/routes_name.dart';
 
 

@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
-import 'package:list_json/home_controller/bindings.dart';
 import 'package:list_json/routes/routes_name.dart';
+import 'controller/bindings.dart';
 import 'global_widget/bottom_nav.dart';
 import 'routes/routes.dart';
 

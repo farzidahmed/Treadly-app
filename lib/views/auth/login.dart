@@ -4,8 +4,7 @@ import 'package:get/get.dart';
 import 'package:list_json/model/album_list.dart';
 import 'package:list_json/views/auth/signup_screen.dart';
 import 'package:http/http.dart' as http;
-import '../../home_controller/aurth_controller.dart';
-import '../../model/album_result.dart';
+import '../../controller/aurth_controller.dart';
 import '../../routes/routes_name.dart';
 
 

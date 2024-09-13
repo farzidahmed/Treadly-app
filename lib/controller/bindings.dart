@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
-import 'package:list_json/home_controller/aurth_controller.dart';
-import 'package:list_json/home_controller/home_controller.dart';
-import 'package:list_json/home_controller/intro_controller.dart';
+import 'aurth_controller.dart';
+import 'home_controller.dart';
+import 'intro_controller.dart';
 
 class bindings extends Bindings{
   @override

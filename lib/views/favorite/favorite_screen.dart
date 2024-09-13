@@ -2,14 +2,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
-import 'package:list_json/global_widget/pupular.dart';
-import 'package:list_json/home_controller/home_controller.dart';
 import 'package:list_json/views/home_screen/product_detailes.dart';
 
+import '../../controller/home_controller.dart';
 import '../../global_widget/bottom_nav.dart';
-import '../home_screen/home_screen.dart';
 
-import '../home_screen/home_screen.dart';
 class FavoriteScreen extends StatelessWidget {
   const FavoriteScreen({super.key});
 
