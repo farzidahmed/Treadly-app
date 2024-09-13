@@ -1,14 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:list_json/global_widget/custom_nav.dart';
 import 'package:list_json/global_widget/pupular.dart';
 import 'package:list_json/style/style.dart';
-import '../global_widget/bottom_nav.dart';
-import '../global_widget/categoris.dart';
-import '../global_widget/product.dart';
-import '../home_controller/home_controller.dart';
-import 'product_detailes.dart';
+import '../../global_widget/categoris.dart';
+import '../../global_widget/product.dart';
 
 
 class HomeScreen extends StatelessWidget {

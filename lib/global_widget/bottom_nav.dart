@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:list_json/views/Profile.dart';
-import 'package:list_json/views/cart_screen.dart';
-import 'package:list_json/views/favorite_screen.dart';
-import 'package:list_json/views/home_screen.dart';
-import 'package:list_json/views/order_history.dart';
+import 'package:list_json/views/profile/Profile.dart';
+import 'package:list_json/views/cart_screen/cart_screen.dart';
+import 'package:list_json/views/favorite/favorite_screen.dart';
+import 'package:list_json/views/home_screen/home_screen.dart';
+import 'package:list_json/views/home_screen/order_history.dart';
 class BottomNav extends StatefulWidget {
    BottomNav({super.key});
 

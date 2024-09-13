@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../style/style.dart';
+import '../../style/style.dart';
 class ProductDetailes extends StatelessWidget {
    ProductDetailes({super.key, required this.title,required this.image, this.price});
    final String image;
